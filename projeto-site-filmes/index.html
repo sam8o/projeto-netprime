@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NetPrime</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/imgs/logo-Photoroom.png" type="image/png" />
+</head>
+
+<body>
+
+  <div id="loader">
+    <img
+      src="./imgs/logo-filmes-Ph.png"
+      alt="Carregando..."
+      class="loader-logo"
+    />
+  </div>
+
+  <header>
+    <div class="logo">
+      <img src="./imgs/logo-filmes-Ph.png" alt="Logo NetPrime" />
+    </div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="filmes.html">Filmes</a></li>
+        <li><a href="series.html">Séries</a></li>
+        <li><a href="minha-lista.html">Minha Lista</a></li>
+        <li class="search-icon"><i class="fas fa-search"></i></li>
+      </ul>
+    </nav>
+
+    <div class="search-box" id="searchbox">
+      <input type="text" placeholder="Buscar filmes ou séries..." />
+      <i class="fas fa-times" id="closeSearch"></i>
+    </div>
+  </header>
+
+  <section class="banner">
+    <video autoplay muted loop class="banner-video">
+      <source src="./video/video-trailer.mp4" type="video/mp4" />
+      Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    <div class="banner-content">
+      <img
+        src="./imgs/fantastico logo-Photoroom.png"
+        alt="Logo Quarteto Fantástico"
+        class="banner-logo"
+      />
+      <p class="tagline">
+        A equipe mais fantástica do universo está de volta em uma nova missão!
+      </p>
+      <p>Assista ao trailer agora e prepare-se para muita ação!</p>
+
+      <div class="info-extra">
+        <span>Ação / Aventura / </span>
+        <span>Lançamento: 24 de Julho 2025</span>
+      </div>
+      <a href="trailer.html">
+        <button>▶ Assistir Agora</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- Seção Populares -->
+  <section class="movie-row">
+    <h2>Populares</h2>
+    <button class="arrow-btn arrow-left">&#10094;</button>
+    <div class="movies">
+      <div class="movie-card">
+        <img
+          src="./imgs/terra-mafia.png"
+          alt="Terra da Máfia"
+          data-title="Terra da Máfia"
+        />
+        <p class="movie-title">Terra da Máfia</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img
+          src="./imgs/the-boys-2.png"
+          alt="The Boys"
+          data-title="The Boys"
+        />
+        <p class="movie-title">The Boys</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img
+          src="./imgs/bad.png"
+          alt="Bad Boys Até o Fim"
+          data-title="Bad Boys Até o Fim"
+        />
+        <p class="movie-title">Bad Boys Até o Fim</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img
+          src="./imgs/jurassic.png"
+          alt="Jurassic World"
+          data-title="Jurassic World"
+        />
+        <p class="movie-title">Jurassic World</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img
+          src="./imgs-series/senna.png"
+          alt="Senna"
+          data-title="Senna"
+        />
+        <p class="movie-title">Senna</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img
+          src="./imgs/1.png"
+          alt="A Maldição de Cinderela"
+          data-title="A Maldição de Cinderela"
+        />
+        <p class="movie-title">A Maldição de Cinderela</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img src="./imgs/2.png" alt="Lightyear" data-title="Lightyear" />
+        <p class="movie-title">Lightyear</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img
+          src="./imgs/premonição-img.png"
+          alt="Premonição"
+          data-title="Premonição"
+        />
+        <p class="movie-title">Premonição 6: Laços de Sangue</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+    </div>
+    <button class="arrow-btn arrow-right">&#10095;</button>
+  </section>
+
+  <!-- Seção Filmes -->
+  <section class="movie-row">
+    <h2>Filmes</h2>
+    <button class="arrow-btn arrow-left">&#10094;</button>
+    <div class="movies">
+      <div class="movie-card">
+        <img src="./imgs/2.png" alt="Lightyear" data-title="Lightyear" />
+        <p class="movie-title">Lightyear</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img
+          src="./imgs/3.png"
+          alt="Animais Fantásticos"
+          data-title="Animais Fantásticos"
+        />
+        <p class="movie-title">Animais Fantásticos</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img
+          src="./imgs/4.png"
+          alt="Velozes e Furiosos 10"
+          data-title="Velozes e Furiosos 10"
+        />
+        <p class="movie-title">Velozes e Furiosos 10</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img src="./imgs/5.png" alt="Flow" data-title="Flow" />
+        <p class="movie-title">Flow</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img src="./imgs/6.png" alt="1992" data-title="1992" />
+        <p class="movie-title">1992</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img
+          src="./imgs/7.png"
+          alt="Fé para o impossível"
+          data-title="Fé para o impossível"
+        />
+        <p class="movie-title">Fé para o impossível</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img src="./imgs/8.png" alt="Serra das Almas" data-title="Serra das Almas" />
+        <p class="movie-title">Serra das Almas</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img src="./imgs/9.png" alt="Esquema de Risco" data-title="Esquema de Risco" />
+        <p class="movie-title">Esquema de Risco</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+    </div>
+    <button class="arrow-btn arrow-right">&#10095;</button>
+  </section>
+
+  <!-- Seção Séries -->
+  <section class="movie-row">
+    <h2>Séries</h2>
+    <button class="arrow-btn arrow-left">&#10094;</button>
+    <div class="movies">
+      <div class="movie-card">
+        <img src="./imgs-series/you.png" alt="You" data-title="You" />
+        <p class="movie-title">You</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img
+          src="./imgs-series/house.png"
+          alt="House Of the Dragon"
+          data-title="House Of The Dragon"
+        />
+        <p class="movie-title">House Of The Dragon</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img src="./imgs-series/fallout.png" alt="Fallout" data-title="Fallout" />
+        <p class="movie-title">Fallout</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img
+          src="./imgs-series/lacasa.png"
+          alt="La casa de papel"
+          data-title="La casa de Papel"
+        />
+        <p class="movie-title">La Casa de Papel</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img
+          src="./imgs-series/invasion.png"
+          alt="Secret Invasion"
+          data-title="Secret Invasion"
+        />
+        <p class="movie-title">Secret Invasion</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img src="./imgs-series/daredevil.png" alt="Daredevil" data-title="Daredevil" />
+        <p class="movie-title">Daredevil</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img src="./imgs-series/dark.png" alt="Dark" data-title="Dark" />
+        <p class="movie-title">Dark</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+      <div class="movie-card">
+        <img src="./imgs-series/sweet.png" alt="Sweet Tooth" data-title="Sweet Tooth" />
+        <p class="movie-title">Sweet Tooth</p>
+        <button class="add-to-list-btn">+ Minha Lista</button>
+        <button class="add-ass">Assistir</button>
+      </div>
+    </div>
+    <button class="arrow-btn arrow-right">&#10095;</button>
+  </section>
+
+  <footer>
+    <p>© 2025 NetPrime - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
